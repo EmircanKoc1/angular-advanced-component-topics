@@ -1,0 +1,48 @@
+$border-color: black;
+$border-size : 2px;
+$border-radius : 0px;
+$border-type : solid;
+$border : $border-size $border-type $border-color;
+$width: 400px;
+$height : 400px;
+
+* {
+    box-sizing: border-box;
+}
+
+@mixin box {
+    border: $border;
+    width: $width;
+    height: $height
+}
+
+@mixin font-size($size) {
+
+    font-size: $size;
+}
+
+@mixin border($border-size , $border-style, $border-color) {
+
+    border: $border-size $border-style $border-color;
+}
+
+@mixin width-height($width , $height) {
+    width: $width ;
+    height: $height;
+}
+
+.card-container {
+    @include box();
+}
+
+.card-title {
+    @include font-size(30px);
+    @include border(2px, solid, black);
+    @include width-height(100%, 20%);
+}
+
+.card-body {
+    @include font-size(20px);
+    @include border(2px, solid, black);
+    @include width-height(100%, 80%);
+}
