@@ -1,0 +1,10 @@
+<p>outlet-example1 works!</p>
+<ng-container [ngTemplateOutlet]="template1" [ngTemplateOutletContext]="{data:333,$implicit:'hello'}">
+</ng-container>
+<br>
+
+<ng-template #template1 let-x  let-data="data">
+    ng template content
+    {{data}}
+    {{x}}
+</ng-template>

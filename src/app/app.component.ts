@@ -4,6 +4,7 @@ import { CardComponent } from "./ng-content/card/card.component";
 import { CommonModule } from '@angular/common';
 import { SimpleComponentComponent } from './ng-container/simple-component/simple-component.component';
 import { Example1Component } from "./ng-template/example1/example1.component";
+import { OutletExample1Component } from "./ng-template-outlet/outlet-example1/outlet-example1.component";
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,9 @@ import { Example1Component } from "./ng-template/example1/example1.component";
     CardComponent,
     CommonModule,
     SimpleComponentComponent,
-    Example1Component],
+    Example1Component,
+    OutletExample1Component
+],
 })
 export class AppComponent {
   title = 'angular-advanced-component-topics';
