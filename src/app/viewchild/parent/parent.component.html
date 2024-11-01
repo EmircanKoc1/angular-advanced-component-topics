@@ -1,0 +1,11 @@
+<p>parent works!</p>
+<app-child #childComponent></app-child>
+<app-child #childComponent></app-child>
+<app-child #childComponent></app-child>
+<app-child #childComponent></app-child>
+<app-child #childComponentWithDirective appRedBackground></app-child>
+<br>
+<input type="text" #input1>
+<button (click)="setMessage(input1.value)">Set message</button>
+<button (click)="setMessages(input1.value)">Set messages</button>
+<button (click)="changeBackgroundColor(input1.value)">ChangeBackground</button>

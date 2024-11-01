@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { SimpleComponentComponent } from './ng-container/simple-component/simple-component.component';
 import { Example1Component } from "./ng-template/example1/example1.component";
 import { OutletExample1Component } from "./ng-template-outlet/outlet-example1/outlet-example1.component";
+import { ParentComponent } from "./viewchild/parent/parent.component";
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,8 @@ import { OutletExample1Component } from "./ng-template-outlet/outlet-example1/ou
     CommonModule,
     SimpleComponentComponent,
     Example1Component,
-    OutletExample1Component
+    OutletExample1Component,
+    ParentComponent
 ],
 })
 export class AppComponent {
