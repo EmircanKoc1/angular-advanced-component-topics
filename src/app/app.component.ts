@@ -5,7 +5,9 @@ import { CommonModule } from '@angular/common';
 import { SimpleComponentComponent } from './ng-container/simple-component/simple-component.component';
 import { Example1Component } from "./ng-template/example1/example1.component";
 import { OutletExample1Component } from "./ng-template-outlet/outlet-example1/outlet-example1.component";
-import { ParentComponent } from "./viewchild/parent/parent.component";
+import { ParentComponent as viewchild_ParenComponent } from "./viewchild/parent/parent.component";
+import { ParentComponent as contentchild_ParentComponent } from './contentchild/parent/parent.component';
+
 
 @Component({
   selector: 'app-root',
@@ -19,8 +21,9 @@ import { ParentComponent } from "./viewchild/parent/parent.component";
     SimpleComponentComponent,
     Example1Component,
     OutletExample1Component,
-    ParentComponent
-],
+    viewchild_ParenComponent,
+    contentchild_ParentComponent
+  ]
 })
 export class AppComponent {
   title = 'angular-advanced-component-topics';
