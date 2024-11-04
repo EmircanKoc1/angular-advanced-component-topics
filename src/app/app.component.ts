@@ -7,6 +7,7 @@ import { Example1Component } from "./ng-template/example1/example1.component";
 import { OutletExample1Component } from "./ng-template-outlet/outlet-example1/outlet-example1.component";
 import { ParentComponent as viewchild_ParenComponent } from "./viewchild/parent/parent.component";
 import { ParentComponent as contentchild_ParentComponent } from './contentchild/parent/parent.component';
+import { Example2Component } from './ng-template/example2/example2.component';
 
 
 @Component({
@@ -22,7 +23,8 @@ import { ParentComponent as contentchild_ParentComponent } from './contentchild/
     Example1Component,
     OutletExample1Component,
     viewchild_ParenComponent,
-    contentchild_ParentComponent
+    contentchild_ParentComponent,
+    Example2Component
   ]
 })
 export class AppComponent {
